@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">testAppMangoFZCO</string>
+    <string name="main_screen">Главный экран</string>
+    <string name="profile_screen">Профиль</string>
+</resources>
