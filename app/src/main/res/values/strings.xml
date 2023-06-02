@@ -3,17 +3,23 @@
     <string name="main_screen">Главный экран</string>
     <string name="profile_screen">Профиль</string>
     <string name="login_title">Вход в приложение</string>
+    <string name="verification_title">Введите код из SMS</string>
     <string name="login_subtitle">Для входа в приложение необходимо ввести номер мобильного телефона</string>
+    <string name="verification_subtitle">Мы отправили сообщение на номер телефона</string>
     <string name="phone_title">Телефон</string>
-    <string name="phone_enter_subtitle">Введите номер телефона</string>
-    <string name="phone_subtitle">Телефон</string>
+    <string name="phone_enter">Введите номер телефона</string>
+    <string name="code_enter">Введите код</string>
     <string name="code">Код подтверждения</string>
     <string name="code_subtitle">Код подтверждения</string>
     <string name="sign_in">Sign In</string>
     <string name="rus_code">+7-</string>
     <string name="phone_num_example">1234567890</string>
     <string name="country_flag">country flag</string>
-    <string name="get_code">ПОЛУЧИТЬ КОД</string>
+    <string name="get_code">ОТПРАВИТЬ КОД</string>
     <string name="dont_account">У меня нет аккаунта. </string>
+    <string name="dont_code">Не пришел код? </string>
     <string name="registration">Регистрация.</string>
+    <string name="request_code">Запросить повторно</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

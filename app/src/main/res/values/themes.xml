@@ -3,7 +3,7 @@
     <style name="Base.Theme.TestAppMangoFZCO" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="colorPrimary">@color/primary_color</item>
         <item name="colorPrimaryDark">@color/primary_color_dark</item>
-        <item name="colorAccent">@color/color_accent</item>
+        <item name="colorAccent">@color/black</item>
     </style>
 
     <style name="Theme.TestAppMangoFZCO" parent="Base.Theme.TestAppMangoFZCO" />
