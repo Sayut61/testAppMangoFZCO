@@ -2,9 +2,16 @@
     <string name="app_name">testAppMangoFZCO</string>
     <string name="main_screen">Главный экран</string>
     <string name="profile_screen">Профиль</string>
-    <string name="login_title">Войти в приложение</string>
-    <string name="phone">Телефон</string>
-    <string name="phone_subtitle">Введите номер телефона</string>
+    <string name="login_title">Вход в приложение</string>
+    <string name="login_subtitle">Для входа в приложение необходимо ввести номер мобильного телефона</string>
+    <string name="phone_title">Телефон</string>
+    <string name="phone_enter_subtitle">Введите номер телефона</string>
+    <string name="phone_subtitle">Телефон</string>
     <string name="code">Код подтверждения</string>
     <string name="code_subtitle">Код подтверждения</string>
+    <string name="sign_in">Sign In</string>
+    <string name="rus_code">+7-</string>
+    <string name="phone_num_example">1234567890</string>
+    <string name="country_flag">country flag</string>
+    <string name="get_code">ПОЛУЧИТЬ КОД</string>
 </resources>
