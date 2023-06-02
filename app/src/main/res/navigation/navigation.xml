@@ -3,7 +3,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/navigation"
-        app:startDestination="@id/authFragment">
+        app:startDestination="@id/codeEntryFragment">
     <fragment
             android:id="@+id/registrationFragment"
             android:name="com.example.testappmangofzco.RegistrationFragment"
@@ -22,11 +22,11 @@
             android:label="fragment_auth"
             tools:layout="@layout/fragment_auth" >
         <action
-                android:id="@+id/action_authFragment_to_profileFragment"
-                app:destination="@id/profileFragment" />
-        <action
                 android:id="@+id/action_authFragment_to_registrationFragment"
                 app:destination="@id/registrationFragment" />
+        <action
+                android:id="@+id/action_authFragment_to_codeEntryFragment"
+                app:destination="@id/codeEntryFragment" />
     </fragment>
     <fragment
             android:id="@+id/profileFragment"
@@ -36,5 +36,14 @@
         <action
                 android:id="@+id/action_profileFragment_to_authFragment"
                 app:destination="@id/authFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/codeEntryFragment"
+            android:name="com.example.testappmangofzco.CodeEntryFragment"
+            android:label="fragment_code_entry"
+            tools:layout="@layout/fragment_code_entry" >
+        <action
+                android:id="@+id/action_codeEntryFragment_to_profileFragment"
+                app:destination="@id/profileFragment" />
     </fragment>
 </navigation>
