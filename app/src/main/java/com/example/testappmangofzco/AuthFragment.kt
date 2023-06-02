@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.testappmangofzco.databinding.FragmentAuthBinding
 
 class AuthFragment : Fragment() {
@@ -23,5 +24,14 @@ class AuthFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        goToRegistrationScreen()
+    }
+
+    private fun goToRegistrationScreen() {
+        binding.registrationTv.setOnClickListener {
+            AuthFragmentDirections.actionAuthFragmentToRegistrationFragment().apply {
+                findNavController().navigate(this)
+            }
+        }
     }
 }
