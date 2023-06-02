@@ -17,8 +17,11 @@
             android:theme="@style/Theme.TestAppMangoFZCO"
             tools:targetApi="31">
         <activity
-                android:name=".RegistrationActivity"
-                android:exported="true">
+                android:name=".MainActivity"
+                android:exported="true"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="adjustResize">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
