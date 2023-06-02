@@ -2,6 +2,9 @@
     <string name="app_name">testAppMangoFZCO</string>
     <string name="main_screen">Главный экран</string>
     <string name="profile_screen">Профиль</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_title">Войти в приложение</string>
+    <string name="phone">Телефон</string>
+    <string name="phone_subtitle">Введите номер телефона</string>
+    <string name="code">Код подтверждения</string>
+    <string name="code_subtitle">Код подтверждения</string>
 </resources>
