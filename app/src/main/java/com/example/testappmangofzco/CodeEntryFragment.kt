@@ -7,12 +7,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.navArgs
 import com.example.testappmangofzco.databinding.FragmentCodeEntryBinding
 
 class CodeEntryFragment : Fragment() {
 
     private var _binding: FragmentCodeEntryBinding? = null
     private val binding get() = _binding!!
+
+    private val args: CodeEntryFragmentArgs by navArgs()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -26,6 +29,11 @@ class CodeEntryFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setupVerifyCodeInputs()
+        showMobileNumber()
+    }
+
+    private fun showMobileNumber() {
+        binding.phoneNum.text = args.phoneNumber
     }
 
 

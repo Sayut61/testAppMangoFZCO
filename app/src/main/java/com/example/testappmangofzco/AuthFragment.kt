@@ -46,8 +46,9 @@ class AuthFragment : Fragment() {
                     Toast.LENGTH_LONG
                 ).show()
             } else {
-                AuthFragmentDirections.actionAuthFragmentToCodeEntryFragment(binding.inputNumber.text.toString())
-                    .apply {
+                AuthFragmentDirections.actionAuthFragmentToCodeEntryFragment(
+                    binding.countryCode.text.toString() +
+                            binding.inputNumber.text.toString()).apply {
                         findNavController().navigate(this)
                     }
             }
