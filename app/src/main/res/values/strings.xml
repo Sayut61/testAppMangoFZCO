@@ -20,6 +20,6 @@
     <string name="dont_code">Не пришел код? </string>
     <string name="registration">Регистрация.</string>
     <string name="request_code">Запросить повторно</string>
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="enter_mobile">Введите номер телефона</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
