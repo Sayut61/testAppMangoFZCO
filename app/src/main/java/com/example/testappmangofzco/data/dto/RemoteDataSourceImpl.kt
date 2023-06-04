@@ -8,7 +8,7 @@ import retrofit2.http.POST
 import retrofit2.http.Path
 import javax.inject.Inject
 
-class RemoteDataSourceImpl @Inject constructor() : RemoteDataSource {
+class RemoteDataSourceImpl @Inject constructor(): RemoteDataSource {
 
     private val client = OkHttpClient()
         .newBuilder()
