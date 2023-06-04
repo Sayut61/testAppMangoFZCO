@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.example.testappmangofzco.R
 import com.example.testappmangofzco.databinding.FragmentAuthBinding
@@ -13,6 +14,8 @@ import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class AuthFragment : Fragment() {
+
+    private val viewModel: AuthViewModel by viewModels()
 
     private var _binding: FragmentAuthBinding? = null
     private val binding get() = _binding!!
@@ -28,8 +31,14 @@ class AuthFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        goToRegistrationScreen()
         onClickSendBtn()
+        /*        viewModel.responseOfSendPhoneLiveData.observe(viewLifecycleOwner) {
+                    if (it) {
+                        goToEnterCodeScreen(binding.countryCode.text.toString() + binding.inputNumber.text.toString())
+                    } else {
+                        goToRegistrationScreen()
+                    }
+                }*/
     }
 
     private fun goToRegistrationScreen() {
@@ -37,6 +46,12 @@ class AuthFragment : Fragment() {
             AuthFragmentDirections.actionAuthFragmentToRegistrationFragment().apply {
                 findNavController().navigate(this)
             }
+        }
+    }
+
+    private fun goToEnterCodeScreen(number: String) {
+        AuthFragmentDirections.actionAuthFragmentToCodeEntryFragment(number).apply {
+            findNavController().navigate(this)
         }
     }
 
@@ -49,12 +64,8 @@ class AuthFragment : Fragment() {
                     Toast.LENGTH_LONG
                 ).show()
             } else {
-                AuthFragmentDirections.actionAuthFragmentToCodeEntryFragment(
-                    binding.countryCode.text.toString() +
-                            binding.inputNumber.text.toString()
-                ).apply {
-                        findNavController().navigate(this)
-                    }
+                /*val currentNumber = binding.countryCode.text.toString() + binding.inputNumber.text.toString()
+                viewModel.sendNumber(currentNumber)*/
             }
         }
     }
