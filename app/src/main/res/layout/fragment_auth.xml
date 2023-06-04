@@ -7,7 +7,7 @@
         android:layout_marginHorizontal="34dp"
         android:overScrollMode="never"
         android:scrollbars="none"
-        tools:context=".AuthFragment">
+        tools:context=".ui.auth.AuthFragment">
 
     <LinearLayout
             android:layout_width="match_parent"

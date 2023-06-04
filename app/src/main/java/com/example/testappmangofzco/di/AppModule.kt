@@ -1,21 +1,21 @@
 package com.example.testappmangofzco.di
 
-import com.example.testappmangofzco.data.RepositoriesImpl
+import com.example.testappmangofzco.data.SendNumberRepositoriesImpl
 import com.example.testappmangofzco.data.dto.RemoteDataSource
-import com.example.testappmangofzco.domain.Repository
+import com.example.testappmangofzco.domain.SendNumberRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 
-@Module
-@InstallIn(SingletonComponent::class)
-object AppModule {
 
-    @Provides
+@InstallIn(SingletonComponent::class)
+@Module
+object AppModule {
     @Singleton
-    fun provideRepository(remoteDataSource: RemoteDataSource) : Repository {
-        return  RepositoriesImpl(remoteDataSource)
+    @Provides
+    fun provideRepository(remoteDataSource: RemoteDataSource) : SendNumberRepository {
+        return  SendNumberRepositoriesImpl(remoteDataSource)
     }
 }

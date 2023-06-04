@@ -6,7 +6,7 @@
         app:startDestination="@id/authFragment">
     <fragment
             android:id="@+id/registrationFragment"
-            android:name="com.example.testappmangofzco.RegistrationFragment"
+            android:name="com.example.testappmangofzco.ui.registration.RegistrationFragment"
             android:label="fragment_registration"
             tools:layout="@layout/fragment_registration" >
         <action
@@ -26,7 +26,7 @@
     </fragment>
     <fragment
             android:id="@+id/authFragment"
-            android:name="com.example.testappmangofzco.AuthFragment"
+            android:name="com.example.testappmangofzco.ui.auth.AuthFragment"
             android:label="fragment_auth"
             tools:layout="@layout/fragment_auth" >
         <action
@@ -46,7 +46,7 @@
     </fragment>
     <fragment
             android:id="@+id/profileFragment"
-            android:name="com.example.testappmangofzco.ProfileFragment"
+            android:name="com.example.testappmangofzco.ui.profile.ProfileFragment"
             android:label="fragment_profile"
             tools:layout="@layout/fragment_profile" >
         <action
@@ -59,7 +59,7 @@
     </fragment>
     <fragment
             android:id="@+id/codeEntryFragment"
-            android:name="com.example.testappmangofzco.CodeEntryFragment"
+            android:name="com.example.testappmangofzco.ui.auth.CodeEntryFragment"
             android:label="fragment_code_entry"
             tools:layout="@layout/fragment_code_entry" >
         <action

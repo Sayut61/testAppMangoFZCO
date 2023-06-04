@@ -1,4 +1,4 @@
-package com.example.testappmangofzco
+package com.example.testappmangofzco.ui.auth
 
 import android.os.Bundle
 import android.text.Editable
@@ -8,8 +8,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
+import com.example.testappmangofzco.ui.auth.CodeEntryFragmentArgs
 import com.example.testappmangofzco.databinding.FragmentCodeEntryBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class CodeEntryFragment : Fragment() {
 
     private var _binding: FragmentCodeEntryBinding? = null
