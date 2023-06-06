@@ -18,14 +18,14 @@ class AuthViewModel @Inject constructor(
     private val _responseOfSendPhoneLiveData = MutableLiveData<Boolean>()
     val responseOfSendPhoneLiveData: LiveData<Boolean> = _responseOfSendPhoneLiveData
 
-    /*fun sendNumber(number: String) {
-        *//*viewModelScope.launch {
-            *//**//*val response = sendPhoneUseCase.sendNumberRepository(number)
+    fun sendNumber(number: String) {
+        viewModelScope.launch {
+            val response = sendPhoneUseCase.sendNumberRepository(number)
             if(response.isSuccessful) {
                 _responseOfSendPhoneLiveData.value = true
             } else if (response.code > 299) {
                 _responseOfSendPhoneLiveData.value = false
-            }*//**//*
-        }*//*
-    }*/
+            }
+        }
+    }
 }

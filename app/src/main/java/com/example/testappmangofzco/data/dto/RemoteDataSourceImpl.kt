@@ -1,5 +1,6 @@
 package com.example.testappmangofzco.data.dto
 
+import com.example.testappmangofzco.data.interceptors.ErrorInterceptor
 import okhttp3.OkHttpClient
 import okhttp3.Response
 import retrofit2.Retrofit
@@ -13,10 +14,11 @@ class RemoteDataSourceImpl @Inject constructor() : RemoteDataSource {
 
     private val client = OkHttpClient()
         .newBuilder()
+        .addInterceptor(ErrorInterceptor())
         .build()
 
     private var mangoApi = Retrofit.Builder()
-        .baseUrl("https://plannerok.ru/docs")
+        .baseUrl("https://plannerok.ru")
         .client(client)
         .addConverterFactory(GsonConverterFactory.create())
         .build()

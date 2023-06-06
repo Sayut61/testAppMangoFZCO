@@ -32,13 +32,13 @@ class AuthFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         onClickSendBtn()
-        /*        viewModel.responseOfSendPhoneLiveData.observe(viewLifecycleOwner) {
+                viewModel.responseOfSendPhoneLiveData.observe(viewLifecycleOwner) {
                     if (it) {
                         goToEnterCodeScreen(binding.countryCode.text.toString() + binding.inputNumber.text.toString())
                     } else {
                         goToRegistrationScreen()
                     }
-                }*/
+                }
     }
 
     private fun goToRegistrationScreen() {
@@ -64,8 +64,8 @@ class AuthFragment : Fragment() {
                     Toast.LENGTH_LONG
                 ).show()
             } else {
-                /*val currentNumber = binding.countryCode.text.toString() + binding.inputNumber.text.toString()
-                viewModel.sendNumber(currentNumber)*/
+                val currentNumber = binding.countryCode.text.toString() + binding.inputNumber.text.toString()
+                viewModel.sendNumber(currentNumber)
             }
         }
     }
